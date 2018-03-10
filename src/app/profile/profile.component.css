@@ -1,0 +1,358 @@
+body {
+	background-color: #393939;
+	
+}
+
+img.me {
+	display: inline;
+	border: 10px solid white;
+}
+div.me-section{
+	text-align: center;
+	background: dimgrey;
+	padding: 20px;
+	border-radius: 5px;
+}
+div.about-me{
+	display: inline-block;
+	vertical-align: top;
+	
+}
+div.about-me p, div.about-me h5{
+	/*display: inline;*/
+	padding: 10px;
+	margin: 20px;
+	text-align: left;
+	
+}
+
+div.tech-box img {
+	width: 50px;
+}
+
+h2 {
+	color: dodgerblue;
+}
+
+h5 {
+	color: skyblue;
+
+}
+
+h4 {
+	color: white;
+}
+
+p {
+	color: gainsboro;
+
+}
+
+h1 {
+	color: whitesmoke;
+	margin: 0 auto;
+}
+
+div.headline p {
+	margin: 0 auto;
+}
+a.brand-logo{
+	z-index: 100;
+}
+img.logo {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	position: relative;
+	z-index: 100;
+}
+
+div.nav-wrapper {
+	/*background: black;*/
+}
+
+div.headline {
+	padding-top: 100px;
+	text-align: center;
+}
+
+
+nav {
+	background-color: steelblue;
+	
+}
+
+div.tech-box {
+	display: inline-block;
+	padding: 5px;
+	/*width: 500px;*/
+	vertical-align: top;
+	text-align: center;
+	/*min-height: 280px;*/
+	border-radius: 5px;
+	background-color: gray;
+	margin: 5px;
+	
+}
+
+div.tech-box ul {
+	margin: 0 auto;
+
+}
+
+div.tech-box ul li {
+	display: inline-block;
+	width: 75px;
+}
+div.tech-box ul li div {
+	
+	text-align: center;
+}
+
+div.tech-container {
+	background-color: #393939;
+	padding: 0;
+	text-align: center;
+
+}
+
+div.tech-box p{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+div.tech-box h4{
+	margin-bottom: 15px;
+}
+.parallax-container {
+	height: 500px;
+}
+.parallax {
+	background-image: url("../../assets/tokyo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;   
+
+}
+
+.parallax-container .parallax {
+	z-index: 0;
+}
+
+div.container #about, #projects, #tech, #contact {
+	padding-top: 35px;
+}
+
+footer {
+	background-color: cornflowerblue;
+	margin-top: 50px;
+}
+
+img.linkedin, img.git {
+	width: 55px;
+	border-radius: 10px;
+
+}
+img.github {
+	width: 55px;
+	border-radius: 50%;
+}
+
+div.scroll {
+	overflow: scroll;
+	height: 470px;
+	overflow-x: hidden;
+	background-color: black;
+	
+}
+div.scroll .container {
+	width: 90%;
+}
+h5.check{
+	color: white;
+}
+ul.links li {
+	display: inline;
+}
+h5.built{
+	color: goldenrod;
+}
+ul.bullets {
+	color: deepskyblue;
+	/*padding-left: 2%;*/
+}
+
+ul.bullets p {
+	display: inline-block;
+	/*vertical-align: super;*/
+	padding-left: 10px;
+	margin: 0 auto;
+
+}
+
+#image-container{
+	width: 100%;
+	/*margin: 5em auto;*/
+	margin-top: 5em;
+	padding: 0;
+	/*background: black;*/
+}
+
+#image-container h5{
+	color: white;
+	text-align: center;
+}
+.items {
+	max-width: 696px;
+	height: 388px;
+}
+
+.items img{
+	width: 696px;
+	border: 10px solid white;
+	max-height: 388px;
+}
+
+div.box-one {
+	text-align: center;
+	margin-top: 30px;
+	
+}
+
+div.box-two {
+	border-radius: 5px;
+	/*background: black;*/
+}
+
+div#contact p{
+	margin:0 auto;
+}
+
+img.great {
+	height: 100px;
+}
+
+div.container #image-container{
+	text-align: center;
+}
+
+@media only screen and (max-width: 663px){
+	.about-me {
+		width: 100%;
+	}
+	.items {
+		height: 300px;
+	}
+	.items img {
+		width: 477px;
+		max-height: 268px;
+	}
+
+	#left, #right{
+		width: 50%;
+	}
+
+	iframe {
+		width: 90%;
+	}
+
+	.box-two p {
+		font-size: 80%;
+
+	}
+
+	.box-two i{
+		display: none;
+	}
+
+	.tech-box {
+		width: 80%;
+		min-height: 80%;
+	}
+
+	#tech h5, #projects h5 {
+		font-size: 18px;
+
+	}
+
+	#contact p {
+		display: inline;
+	}
+	#about, #projects, #tech, #contact, footer .container {
+		text-align: center;
+	}
+
+}
+
+@media only screen and (min-width: 664px) and (max-width: 767px) {
+	.items {
+		height: 320px;
+	}
+	.items img {
+		width: 566px;
+		max-height: 317px;
+	}
+	#left, #right {
+		width: 50%;
+	}
+	iframe {
+		width: 90%;
+	}
+	.tech-box {
+		max-width: 47%;
+		min-height: 250px;
+	}
+	
+	.box-two i{
+		display: none;
+	}
+	footer .container {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.items {
+		height: 364px;
+	}
+	.items img {
+		width: 652px;
+		max-height: 364px;
+	}
+	#left, #right {
+		width: 50%;
+	}
+
+	.tech-box {
+		max-width: 48%;
+		min-height: 250px;
+	}
+}
+@media only screen and (min-width: 993px) {
+	.tech-container {
+		width: 100%;
+
+	}
+
+	img.great{
+		margin-top: 50px;
+	}
+
+	.tech-box {
+		width: 295px;
+		min-height: 250px;
+	}
+	/*#image-container{
+		width: 100%;
+	}*/
+	div.me {
+		display: inline;
+	}
+	div.about-me {
+		display: inline-block;
+		width: 50%;
+	}
+}

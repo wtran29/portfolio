@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
+	
+</head>
+<body>
+	<!-- <div class="navbar-fixed">
+		<nav data-activates="mobile-demo" class="button-collapse">
+			<div class="nav-wrapper">
+
+				<a href="#!" class="brand-logo"><img class="logo" src="../assets/logo.png"></a>
+				<a materialize="sideNav" [materializeParams]="sidenavParams" [materializeActions]="sidenavActions" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#about">ABOUT ME</a></li>
+					<li><a href="#projects">PROJECTS</a></li>
+					<li><a href="#tech">TECHNOLOGIES</a></li>
+					<li><a href="#contact">CONTACT ME</a></li>
+				</ul>
+				<ul class="side-nav" id="nav-mobile">
+					<li>
+				        <a><i class="material-icons" (click)="close()">close</i></a>
+				    </li>
+					<li><a href="#about">ABOUT ME</a></li>
+					<li><a href="#projects">PROJECTS</a></li>
+					<li><a href="#tech">TECHNOLOGIES</a></li>
+					<li><a href="#contact">CONTACT ME</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div> -->
+	
+	<div class="parallax-container">
+		<div class="parallax">
+			
+		<div class="headline">
+			<h1>William Tran</h1>
+
+			<p>I am <span>DEDICATED, FOCUSED and <span style="font-style: italic" >extremely</span> DRIVEN.</span></p>
+			<p style="margin-left: 10%">I am <span>about creating solutions and turning ideas into reality.</span></p>
+			<p style="margin-left: 10%">I am <span>a SOFTWARE DEVELOPER.</span></p>
+		</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+      		$('.parallax').parallax();
+    	});
+	</script>
+	<div class="container">
+		<div id="about"><br>
+
+			<h2>About Me</h2>
+			<div class="me-section">
+				<img src="../assets/me3.jpg" class="me">
+				<div class="about-me">
+					<h5>From Finance to Tech</h5>
+					<p>Transitioning from the world of financial statements to having the opportunity to implement technology and creating applications that influences lives. Having worked in different industries with a focus on Finance and Accounting for 10+ years, I realized how microprocessing and automation plays a huge role in companies. These advancements in technology paved way to my curiosity as I set foot to being a software developer.</p> 
+					<h5>Goals</h5>
+					<p>Having dedicated over 1,500 hours of coding and finishing a rigorous 3 month training program, I have built a foundation for my humble beginnings as a software developer. My goal is to build purposeful software programs that fit today's social media landscape.</p>
+				</div>
+				
+			</div>
+		</div>
+		<div id="image-container">
+			<h5>My other goal is to travel when I have the chance. Here are some pictures.</h5>
+			<div ng2-carouselamos class="slides-wrapper"
+				[items]="items"
+				[width]="696"
+				[$prev]="prev"
+				[$next]="next"
+				[$item]="item">
+			</div>
+
+			<ng-template #prev>
+				<img src="../assets/chevron-left.png" id="left">
+			</ng-template>
+				
+			<ng-template #next>
+				<img src="../assets/chevron-right.png" id="right">
+			</ng-template>
+
+			<ng-template #item let-item let-i="index">
+				<div class="items">
+					<img src="{{ item.name }}">
+				</div>
+			</ng-template>
+			
+		</div>
+			<!-- <div class="carousel carousel-slider center" data-indicators="true">
+				<div class="carousel-fixed-item center">
+				<a class="btn waves-effect white grey-text darken-text-2">button</a>
+				</div>
+				<div class="carousel-item red white-text" href="#one!">
+				<h2>First Panel</h2>
+				<p class="white-text">This is your first panel</p>
+				</div>
+				<div class="carousel-item amber white-text" href="#two!">
+				<h2>Second Panel</h2>
+				<p class="white-text">This is your second panel</p>
+				</div>
+				<div class="carousel-item green white-text" href="#three!">
+				<h2>Third Panel</h2>
+				<p class="white-text">This is your third panel</p>
+				</div>
+				<div class="carousel-item blue white-text" href="#four!">
+				<h2>Fourth Panel</h2>
+				<p class="white-text">This is your fourth panel</p>
+				</div>
+			</div>
+		<script type="text/javascript" language="javascript">
+			$('.carousel.carousel-slider').carousel({fullWidth: true});
+		</script> -->
+		<div id="projects">
+			<br>
+			<h2>Projects</h2>
+			<h5>Whether I am working on the front-end or back-end, I use methodology along with creativity and problem solving skills to build out purposeful applications.</h5>
+			<p>These are a couple of projects that I have worked on which help solidify my skills as a developer.</p>
+		</div>
+		<div class="scroll">
+			<div class="container">
+				
+				<div class="box-one">
+					<h4>Club of Diamonds</h4>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/1xWH7YfPYek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="box-two">
+					<h5>Description</h5>
+					<p>A social app geared towards young, affluent users to discover, showcase and 
+					list luxury items/services. Has login and registration, backend and frontend validations. Front page features a randomly generated item so it has some chance to gain exposure to other users.</p>
+					<h5>Responsibilities</h5>
+					<ul class="bullets">
+						<li><i class="tiny material-icons">send</i><p> Setting up the database, server, routing, models, controller, back-end and front-end design.</p></li>
+						<li><i class="tiny material-icons">send</i><p> Created and implemented Angular components, services, classes and routing.</p></li>
+						<li><i class="tiny material-icons">send</i><p> Implemented modal for registration, authentication, encryption, validations, sessions management, error handling.</p></li>
+						<li><i class="tiny material-icons">send</i><p> Implemented filter directive for search bar and equal validator directive for password confirmation.</p></li>
+						<li><i class="tiny material-icons">send</i><p> Deployed of project using AWS EC2.</p></li>
+					</ul>
+					<h5 class="built">This project was built with: </h5>
+					<p>JavaScript, Angular, Express.js, Node.js, MongoDB, HTML, CSS</p>
+					<h5 class="check">Check out the code <a href="http://github.com/wtran29/ClubOfDiamonds">here</a></h5>
+				</div>
+				<div class="box-one">
+					<h4>DoggyCrate</h4>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/VvktAVBA8x4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="box-two">
+					<h5>Description</h5>
+					<p>A monthly subscription platform for pet dogs. Has both admin and user role. Admin has control of subscription creation, availability, client data, and deleting. Users can subscribe and update prior to login and registration.</p>
+					<h5>Responsibilities</h5>
+					<ul class="bullets">
+						<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Created design of packages using Photoshop.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
+					</ul>
+					<h5 class="built">This project was built with: </h5>
+					<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL, Photoshop</p>
+					<h5 class="check">Check out the code <a href="http://github.com/wtran29/DoggyCrate">here</a></h5>
+				</div>
+				<div class="box-one">
+					<h4>Engage</h4>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/KZLEh-QOYPQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="box-two">
+					<h5>Description</h5>
+					<p>A social app to promote users to create and engage in events with friends and family. Users have the ability to participate in a message board in ‘events’ page.</p>
+					<h5>Responsibilities</h5>
+					<ul class="bullets">
+						<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Administered version control using GitHub.</p></li>
+						<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
+					</ul>
+					<h5 class="built">This project was built with: </h5>
+					<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL</p>
+					<h5 class="check">Check out the code <a href="http://github.com/wtran29/EngageApp">here</a></h5>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="tech">
+			<br>
+			<h2>Technologies</h2>
+			<h5>I am capable of learning new technologies quickly and always look for the opportunity to expand my skills and grow as a developer.</h5>
+			<p>Here are the set of tools I have used below: </p>
+		</div>
+		<div class="tech-container">
+			<div class="tech-box">
+				<h4>LANGUAGES</h4>
+				<ul>
+					<li><div><img src="../assets/JavaScript.png" alt="js"><p>JavaScript</p></div></li>
+					<li><div><img src="../assets/java.png" alt="java"><p>Java</p></div></li>
+					<li><div><img src="../assets/python.png" alt="python"><p>Python</p></div></li>
+				</ul>
+			</div>
+			<div class="tech-box">
+				<h4>FRAMEWORKS</h4>
+				<ul>
+					<li><div><img src="../assets/angular.png" alt="angular"><p>Angular</p></div></li>
+					<li><div><img src="../assets/expressjs.png" alt="express"><p>Express.js</p></div></li>
+					<li><div><img src="../assets/nodejs.png" alt="node"><p>Node.js</p></div></li>
+					<li><div><img src="../assets/spring.png" alt="spring"><p>Spring Boot</p></div></li>
+					<li><div><img src="../assets/django.png" alt="django"><p>Django</p></div></li>
+					<li><div><img src="../assets/pandas.png" alt="pandas"><p>Pandas</p></div></li>
+					<!-- <li><div><img src="../assets/matplot.png" alt="matplot"><p>matplotlib</p></div></li> -->
+				</ul>
+			</div>
+			<div class="tech-box">
+				<h4>DESIGN</h4>
+				<ul>
+					<li><div><img src="../assets/HTML.png" alt="html"><p>HTML</p></div></li>
+					<li><div><img src="../assets/CSS.png" alt="css"><p>CSS</p></div></li>
+					<li><div><img src="../assets/jQuery.png" alt="jquery"><p>jQuery</p></div></li>
+					<li><div><img src="../assets/bootstrap.png" alt="bootstrap"><p>Bootstrap</p></div></li>
+					<li><div><img src="../assets/ps.png" alt="photoshop"><p>Photoshop</p></div></li>
+					<li><div><img src="../assets/materialize.png" alt="materialize-css"><p>Materialize</p></div></li>
+				</ul>
+			</div>
+			<div class="tech-box">
+				<h4>DATABASES</h4>
+				<ul>
+					<li><div><img src="../assets/mongodb.png" alt="mongo"><p>MongoDB</p></div></li>
+					<li><div><img src="../assets/mysql.png" alt="mysql"><p>MySQL</p></div></li>
+					<li><div><img src="../assets/sqlite.png" alt="sqlite"><p>SQLite</p></div></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contact"><br><h2>Contact Me</h2>
+			<p>I always value for the opportunity to grow and contribute to a positive environment.</p> 
+			<p>Let's work together and turn ideas into reality. </p>
+			<p>Feel free to contact me at <a href="mailto:wtran4hire@gmail.com">wtran4hire@gmail.com</a>.</p>
+		</div>
+	</div>
+	<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Keep In Touch</h5>
+                <!-- <p class="grey-text text-lighten-4">Here are my links so we could keep in touch.</p> -->
+                <ul class="links">
+                  <li><a class="grey-text text-lighten-3" href="mailto:wtran4hire@gmail.com"><i class="medium material-icons">email</i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/william-tran"><img class="linkedin" src="../assets/linkedin-blue.png"></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/wtran29"><img class="git" src="../assets/git.jpg"></a></li>
+                  <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+              	<img class="great" src="../assets/great.jpg">
+                <!-- <h5 class="white-text">Links</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            William Tran © 2018 Copyright
+            </div>
+          </div>
+    </footer>
+</body>
+</html>

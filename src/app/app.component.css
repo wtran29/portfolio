@@ -1,0 +1,109 @@
+body {
+	background-color: #393939;
+	
+}
+
+
+div.scroll {
+	/*background-color:black;*/
+	font-family: monospace;
+	color:white;
+	font-size:50px;
+	text-align: center;
+}
+
+
+div.tech-box img {
+	width: 50px;
+}
+
+h2 {
+	color: dodgerblue;
+}
+
+h5 {
+	color: skyblue;
+}
+
+h4 {
+	color: white;
+}
+
+p {
+	color: gainsboro;
+
+}
+
+h1 {
+	color: whitesmoke;
+	margin: 0 auto;
+}
+
+div.headline p {
+	margin: 0 auto;
+}
+a.brand-logo{
+	z-index: 100;
+}
+img.logo {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	position: relative;
+	z-index: 100;
+}
+
+div.nav-wrapper {
+	/*background: black;*/
+}
+
+div.headline {
+	padding-top: 100px;
+	text-align: center;
+}
+
+
+nav {
+	background-color: cornflowerblue;
+	
+}
+
+div.tech-box {
+	display: inline-block;
+	padding: 20px;
+	width: 275px;
+	vertical-align: top;
+	text-align: center;
+	min-height: 305px;
+	border-radius: 5px;
+	background-color: gray;
+	margin: 5px;
+	
+}
+
+div.tech-box ul {
+	margin: 0 auto;
+
+}
+
+div.tech-box ul li {
+	display: inline-block;
+	width: 75px;
+}
+div.tech-box ul li div {
+	
+	text-align: center;
+}
+
+div.tech-container {
+	display: inline;
+	background-color: #393939;
+}
+
+div.tech-box p{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
