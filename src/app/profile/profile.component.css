@@ -356,3 +356,28 @@ div.container #image-container{
 		width: 50%;
 	}
 }
+
+a[id="home"]:target ~ #home {
+	-webkit-transform: translateY( 0px);
+	transform: translateY( 0px );
+}
+
+a[id="about"]:target ~ #about {
+	-webkit-transform: translateY( -500px);
+	transform: translateY( -500px );
+}
+
+a[id="projects"]:target ~ #projects {
+	-webkit-transform: translateY( -1000px);
+	transform: translateY( -1000px );
+}
+
+a[id="tech"]:target ~ #tech {
+	-webkit-transform: translateY( -1500px);
+	transform: translateY( -1500px );
+}
+
+a[id="contact"]:target ~ #contact {
+	-webkit-transform: translateY( -1500px);
+	transform: translateY( -1500px );
+}
