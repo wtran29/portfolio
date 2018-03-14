@@ -24,7 +24,7 @@ div.about-me{
 }
 div.about-me p, div.about-me h5{
 	/*display: inline;*/
-	padding: 10px;
+	
 	margin: 20px;
 	text-align: left;
 	
@@ -360,7 +360,7 @@ div.container #image-container{
 		width: 85%
 	}
 	img.me {
-		margin-top:8%;
+		margin-top:2%;
 	}
 
 	.items {

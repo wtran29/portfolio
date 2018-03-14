@@ -11,15 +11,13 @@ export class ProfileComponent implements OnInit {
   items: Array<any> = [];
   constructor() { 
     this.items = [
-    	{ name: '../assets/memory.jpg' },
-    	{ name: '../assets/rome4.jpg' },
-    	{ name: '../assets/rome2.jpg' },
-    	{ name: '../assets/vatican2.jpg' },
-    	{ name: '../assets/venice2.jpg' },
-    	{ name: '../assets/me.jpg' },
-    	{ name: '../assets/florence.jpg' },
-    	{ name: '../assets/forum.jpg' },
-    	{ name: '../assets/forum2.jpg' },
+    	{ title: "Positive Attitude" , name: '../assets/positive.jpg', label: "Always contributing to a positive environment and going the distance to get the job done." },
+    	{ title: "Task Oriented", name: '../assets/task.jpg', label: "Strive to produce at a high level, backed with strong work ethic." },
+    	{ title: "Self Motivated Learner", name: '../assets/motivated.jpeg', label: "Ability to pick up new technologies and apply them to development." },
+    	{ title: "Team player", name: '../assets/team.jpg', label: "Always to collaborate with others and learn from each other." },
+    	{ title: "Product Design", name: '../assets/design.jpg', label: "Keeping in mind how the design will represent the product." },
+    	{ title: "User Focused", name: '../assets/user.jpg', label: "Figuring out what features create value." },
+    	
     ];
   }
 

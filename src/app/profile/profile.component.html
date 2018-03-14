@@ -62,16 +62,16 @@
 			<div class="me-section">
 				<img src="../assets/freelancer.jpg" class="me">
 				<div class="about-me">
-					<h5>From Finance to Tech</h5>
-					<p>Transitioning from the world of financial statements to having the opportunity to implement technology and creating applications that influences lives. Having worked in different industries with a focus on Finance and Accounting for 10+ years, I realized how microprocessing and automation plays a huge role in companies. These advancements in technology paved way to my curiosity as I set foot to being a software developer.</p> 
+					<h5>From Finance to Technology</h5>
+					<p>Transitioning from the world of financial statements to having the opportunity to implement technology and creating applications that influences lives. Having worked in different industries with a focus on Finance and Accounting for 10+ years, I realized how microprocessing and automation play a huge role in companies. These advancements in technology paved way to my curiosity as I set foot to being a software developer.</p> 
 					<h5>Goals</h5>
-					<p>Having dedicated over 1,500 hours of coding and finishing a rigorous 3 month training program, I have built a foundation for my humble beginnings as a software developer. My goal is to build purposeful software programs that fit today's social media landscape.</p>
+					<p>Upon finishing a rigorous 3 month training program and my continuous dedication to improve my craft, I have built a foundation for my humble beginnings as a software developer. My goal is to continue to build purposeful software programs that fit today's social media landscape.</p>
 				</div>
 				
 			</div>
 		</div>
 		<div id="image-container">
-			<h5>My other goal is to travel when I have the chance. Here are some pictures.</h5>
+			<h5>What I Offer and Value</h5>
 			<div ng2-carouselamos class="slides-wrapper"
 				[items]="items"
 				[width]="696"
@@ -90,7 +90,9 @@
 
 			<ng-template #item let-item let-i="index">
 				<div class="items">
+					<h3>{{ item.title }}</h3>
 					<img src="{{ item.name }}">
+					<p>{{ item.label }}</p>
 				</div>
 			</ng-template>
 			
