@@ -290,7 +290,26 @@ div.container #image-container{
 	}
 
 }
+@media only screen and (min-width: 360px) and (max-width: 663px) {
+	img.me {
+		width: 95%;
+		margin-top: 25px;
+	}
+	.items {
+		height: 177px;
+	}
+	.items img {
+		width: 308px;
+		max-height: 177px;
+	}
+	#left, #right {
+		width: 50%;
+	}
+	.collapsible-header h4{
+		font-size: 160%;
+	}
 
+}
 @media only screen and (min-width: 664px) and (max-width: 767px) {
 	.items {
 		height: 309px;
