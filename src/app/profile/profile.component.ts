@@ -16,7 +16,7 @@ export class ProfileComponent implements OnInit {
     	{ title: "Self Motivated Learner", name: '../assets/motivated.jpeg', label: "Ability to pick up new technologies and apply them to development." },
     	{ title: "Team player", name: '../assets/team.jpg', label: "Always to collaborate with others and learn from each other." },
     	{ title: "Product Design", name: '../assets/design.jpg', label: "Keeping in mind how the design will represent the product." },
-    	{ title: "User Focused", name: '../assets/user.jpg', label: "Figuring out what features create value." },
+    	{ title: "User Focused", name: '../assets/user.png', label: "Figuring out what features create value." },
     	
     ];
   }

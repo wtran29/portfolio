@@ -71,10 +71,10 @@
 			</div>
 		</div>
 		<div id="image-container">
-			<h5>What I Offer and Value</h5>
+			<h2>What I Offer and Value</h2>
 			<div ng2-carouselamos class="slides-wrapper"
 				[items]="items"
-				[width]="696"
+				[width]="800"
 				[$prev]="prev"
 				[$next]="next"
 				[$item]="item">
@@ -90,7 +90,7 @@
 
 			<ng-template #item let-item let-i="index">
 				<div class="items">
-					<h3>{{ item.title }}</h3>
+					<h5>{{ item.title }}</h5>
 					<img src="{{ item.name }}">
 					<p>{{ item.label }}</p>
 				</div>
