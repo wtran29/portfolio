@@ -9,6 +9,7 @@ body {
 img.me {
 	display: inline;
 	border: 10px solid white;
+	width: 390px;
 }
 div.me-section{
 	text-align: center;
@@ -292,11 +293,11 @@ div.container #image-container{
 
 @media only screen and (min-width: 664px) and (max-width: 767px) {
 	.items {
-		height: 320px;
+		height: 309px;
 	}
 	.items img {
-		width: 566px;
-		max-height: 317px;
+		width: 549px;
+		max-height: 309px;
 	}
 	#left, #right {
 		width: 50%;
@@ -319,11 +320,11 @@ div.container #image-container{
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 	.items {
-		height: 364px;
+		height: 358px;
 	}
 	.items img {
-		width: 652px;
-		max-height: 364px;
+		width: 639px;
+		max-height: 358px;
 	}
 	#left, #right {
 		width: 50%;
@@ -335,6 +336,27 @@ div.container #image-container{
 	}
 }
 @media only screen and (min-width: 993px) {
+	
+	.container {
+		width: 85%
+	}
+	img.me {
+		margin-top:8%;
+	}
+
+	.items {
+		height: 381px;
+	}
+
+	.items img {
+		width: 696px;
+		max-height: 381px;
+	}
+
+	#left, #right {
+		width: 50%;
+		margin: 5%;
+	}
 	.tech-container {
 		width: 100%;
 
