@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.js"></script>
@@ -12,21 +13,12 @@
 </head>
 <body>
 	<!-- <div class="navbar-fixed">
-		<nav data-activates="mobile-demo" class="button-collapse">
+		<nav data-activates="nav-mobile" class="button-collapse">
 			<div class="nav-wrapper">
 
-				<a href="#!" class="brand-logo"><img class="logo" src="../assets/logo.png"></a>
-				<a materialize="sideNav" [materializeParams]="sidenavParams" [materializeActions]="sidenavActions" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				<a href="#home" class="brand-logo"><img class="logo" src="../assets/logo.png"></a>
+				<a materialize="sideNav" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="#about">ABOUT ME</a></li>
-					<li><a href="#projects">PROJECTS</a></li>
-					<li><a href="#tech">TECHNOLOGIES</a></li>
-					<li><a href="#contact">CONTACT ME</a></li>
-				</ul>
-				<ul class="side-nav" id="nav-mobile">
-					<li>
-				        <a><i class="material-icons" (click)="close()">close</i></a>
-				    </li>
 					<li><a href="#about">ABOUT ME</a></li>
 					<li><a href="#projects">PROJECTS</a></li>
 					<li><a href="#tech">TECHNOLOGIES</a></li>
@@ -34,8 +26,18 @@
 				</ul>
 			</div>
 		</nav>
-	</div> -->
-	
+	</div>
+	<ul class="side-nav" id="nav-mobile">
+		<li>
+	        <a onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons">close</i></a>
+	    </li>
+		<li><a href="#about">ABOUT ME</a></li>
+		<li><a href="#projects">PROJECTS</a></li>
+		<li><a href="#tech">TECHNOLOGIES</a></li>
+		<li><a href="#contact">CONTACT ME</a></li>
+		<div class="divider"></div>
+		
+	</ul> -->
 	<div class="parallax-container">
 		<div class="parallax">
 			
@@ -93,103 +95,91 @@
 			</ng-template>
 			
 		</div>
-			<!-- <div class="carousel carousel-slider center" data-indicators="true">
-				<div class="carousel-fixed-item center">
-				<a class="btn waves-effect white grey-text darken-text-2">button</a>
-				</div>
-				<div class="carousel-item red white-text" href="#one!">
-				<h2>First Panel</h2>
-				<p class="white-text">This is your first panel</p>
-				</div>
-				<div class="carousel-item amber white-text" href="#two!">
-				<h2>Second Panel</h2>
-				<p class="white-text">This is your second panel</p>
-				</div>
-				<div class="carousel-item green white-text" href="#three!">
-				<h2>Third Panel</h2>
-				<p class="white-text">This is your third panel</p>
-				</div>
-				<div class="carousel-item blue white-text" href="#four!">
-				<h2>Fourth Panel</h2>
-				<p class="white-text">This is your fourth panel</p>
-				</div>
-			</div>
-		<script type="text/javascript" language="javascript">
-			$('.carousel.carousel-slider').carousel({fullWidth: true});
-		</script> -->
 		<div id="projects">
 			<br>
 			<h2>Projects</h2>
 			<h5>Whether I am working on the front-end or back-end, I use methodology along with creativity and problem solving skills to build out purposeful applications.</h5>
 			<p>These are a couple of projects that I have worked on which help solidify my skills as a developer.</p>
 		</div>
-		<div class="scroll">
-			<div class="container">
-				
-				<div class="box-one">
-					<h4>Club of Diamonds</h4>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/1xWH7YfPYek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<div class="box-two">
-					<h5>Description</h5>
-					<p>A social app geared towards young, affluent users to discover, showcase and 
-					list luxury items/services. Has login and registration, backend and frontend validations. Front page features a randomly generated item so it has some chance to gain exposure to other users.</p>
-					<h5>Responsibilities</h5>
-					<ul class="bullets">
-						<li><i class="tiny material-icons">send</i><p> Setting up the database, server, routing, models, controller, back-end and front-end design.</p></li>
-						<li><i class="tiny material-icons">send</i><p> Created and implemented Angular components, services, classes and routing.</p></li>
-						<li><i class="tiny material-icons">send</i><p> Implemented modal for registration, authentication, encryption, validations, sessions management, error handling.</p></li>
-						<li><i class="tiny material-icons">send</i><p> Implemented filter directive for search bar and equal validator directive for password confirmation.</p></li>
-						<li><i class="tiny material-icons">send</i><p> Deployed of project using AWS EC2.</p></li>
-					</ul>
-					<h5 class="built">This project was built with: </h5>
-					<p>JavaScript, Angular, Express.js, Node.js, MongoDB, HTML, CSS</p>
-					<h5 class="check">Check out the code <a href="http://github.com/wtran29/ClubOfDiamonds">here</a></h5>
-				</div>
-				<div class="box-one">
-					<h4>DoggyCrate</h4>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/VvktAVBA8x4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<div class="box-two">
-					<h5>Description</h5>
-					<p>A monthly subscription platform for pet dogs. Has both admin and user role. Admin has control of subscription creation, availability, client data, and deleting. Users can subscribe and update prior to login and registration.</p>
-					<h5>Responsibilities</h5>
-					<ul class="bullets">
-						<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Created design of packages using Photoshop.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
-					</ul>
-					<h5 class="built">This project was built with: </h5>
-					<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL, Photoshop</p>
-					<h5 class="check">Check out the code <a href="http://github.com/wtran29/DoggyCrate">here</a></h5>
-				</div>
-				<div class="box-one">
-					<h4>Engage</h4>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/KZLEh-QOYPQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<div class="box-two">
-					<h5>Description</h5>
-					<p>A social app to promote users to create and engage in events with friends and family. Users have the ability to participate in a message board in ‘events’ page.</p>
-					<h5>Responsibilities</h5>
-					<ul class="bullets">
-						<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Administered version control using GitHub.</p></li>
-						<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
-					</ul>
-					<h5 class="built">This project was built with: </h5>
-					<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL</p>
-					<h5 class="check">Check out the code <a href="http://github.com/wtran29/EngageApp">here</a></h5>
-				</div>
-			</div>
-		</div>
+		<!-- <div class="scroll"> -->
+			<ul class="collapsible popout" data-collapsible="accordion">
+				<li>
+				<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>Club of Diamonds</h4></div>
+					<div class="collapsible-body">
+						<div class="box-one">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/1xWH7YfPYek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="box-two">
+							<h5>Description</h5>
+							<p>A social app geared towards young, affluent users to discover, showcase and 
+							list luxury items/services. Has login and registration, backend and frontend validations. Front page features a randomly generated item so it has some chance to gain exposure to other users.</p>
+							<h5>Responsibilities</h5>
+							<ul class="bullets">
+								<li><i class="tiny material-icons">send</i><p> Setting up the database, server, routing, models, controller, back-end and front-end design.</p></li>
+								<li><i class="tiny material-icons">send</i><p> Created and implemented Angular components, services, classes and routing.</p></li>
+								<li><i class="tiny material-icons">send</i><p> Implemented modal for registration, authentication, encryption, validations, sessions management, error handling.</p></li>
+								<li><i class="tiny material-icons">send</i><p> Implemented filter directive for search bar and equal validator directive for password confirmation.</p></li>
+								<li><i class="tiny material-icons">send</i><p> Deployed of project using AWS EC2.</p></li>
+							</ul>
+							<h5 class="built">This project was built with: </h5>
+							<p>JavaScript, Angular, Express.js, Node.js, MongoDB, HTML, CSS</p>
+							<h5 class="check">Check out the code <a href="http://github.com/wtran29/ClubOfDiamonds">here</a></h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>DoggyCrate</h4></div>
+					<div class="collapsible-body">
+						<div class="box-one">	
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/VvktAVBA8x4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="box-two">
+							<h5>Description</h5>
+							<p>A monthly subscription platform for pet dogs. Has both admin and user role. Admin has control of subscription creation, availability, client data, and deleting. Users can subscribe and update prior to login and registration.</p>
+							<h5>Responsibilities</h5>
+							<ul class="bullets">
+								<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Created design of packages using Photoshop.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
+							</ul>
+							<h5 class="built">This project was built with: </h5>
+							<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL, Photoshop</p>
+							<h5 class="check">Check out the code <a href="http://github.com/wtran29/DoggyCrate">here</a></h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>Engage</h4></div>
+					<div class="collapsible-body">
+						<div class="box-one">
+							
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/KZLEh-QOYPQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="box-two">
+							<h5>Description</h5>
+							<p>A social app to promote users to create and engage in events with friends and family. Users have the ability to participate in a message board in ‘events’ page.</p>
+							<h5>Responsibilities</h5>
+							<ul class="bullets">
+								<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Administered version control using GitHub.</p></li>
+								<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
+							</ul>
+							<h5 class="built">This project was built with: </h5>
+							<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL</p>
+							<h5 class="check">Check out the code <a href="http://github.com/wtran29/EngageApp">here</a></h5>
+						</div>
+					</div>
+				</li>
+			</ul>
+		<!-- </div> -->
 
 
 		<div id="tech">

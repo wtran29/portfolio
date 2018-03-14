@@ -1,12 +1,12 @@
-body {
+/*body {
 	background-color: #393939;
 	
-}
+}*/
 
 
-div.scroll {
+/*div.scroll {*/
 	/*background-color:black;*/
-	font-family: monospace;
+	/*font-family: monospace;
 	color:white;
 	font-size:50px;
 	text-align: center;
@@ -15,7 +15,7 @@ div.scroll {
 
 div.tech-box img {
 	width: 50px;
-}
+}*/
 
 h2 {
 	color: dodgerblue;
@@ -69,65 +69,3 @@ nav {
 	
 }
 
-div.tech-box {
-	display: inline-block;
-	padding: 20px;
-	width: 275px;
-	vertical-align: top;
-	text-align: center;
-	min-height: 305px;
-	border-radius: 5px;
-	background-color: gray;
-	margin: 5px;
-	
-}
-
-div.tech-box ul {
-	margin: 0 auto;
-
-}
-
-div.tech-box ul li {
-	display: inline-block;
-	width: 75px;
-}
-div.tech-box ul li div {
-	
-	text-align: center;
-}
-
-div.tech-container {
-	display: inline;
-	background-color: #393939;
-}
-
-div.tech-box p{
-	margin: 0 auto;
-	margin-bottom: 10px;
-	font-size: 12px;
-}
-
-a[id="home"]:target ~ #home {
-	-webkit-transform: translateY( 0px);
-	transform: translateY( 0px );
-}
-
-a[id="about"]:target ~ #about {
-	-webkit-transform: translateY( -500px);
-	transform: translateY( -500px );
-}
-
-a[id="projects"]:target ~ #projects {
-	-webkit-transform: translateY( -1000px);
-	transform: translateY( -1000px );
-}
-
-a[id="tech"]:target ~ #tech {
-	-webkit-transform: translateY( -1500px);
-	transform: translateY( -1500px );
-}
-
-a[id="contact"]:target ~ #contact {
-	-webkit-transform: translateY( -1500px);
-	transform: translateY( -1500px );
-}

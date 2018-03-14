@@ -1,6 +1,9 @@
+html {
+	scroll-behavior: smooth;
+	
+}
 body {
 	background-color: #393939;
-	
 }
 
 img.me {
@@ -357,27 +360,17 @@ div.container #image-container{
 	}
 }
 
-a[id="home"]:target ~ #home {
-	-webkit-transform: translateY( 0px);
-	transform: translateY( 0px );
+.collapsible-header {
+	background-color: cornflowerblue;
+	padding: 0;
+	padding-left: 1rem;
 }
 
-a[id="about"]:target ~ #about {
-	-webkit-transform: translateY( -500px);
-	transform: translateY( -500px );
+.collapsible-body {
+	background-color: black;
 }
 
-a[id="projects"]:target ~ #projects {
-	-webkit-transform: translateY( -1000px);
-	transform: translateY( -1000px );
+.collapsible-header:active i {
+	display: none;
 }
 
-a[id="tech"]:target ~ #tech {
-	-webkit-transform: translateY( -1500px);
-	transform: translateY( -1500px );
-}
-
-a[id="contact"]:target ~ #contact {
-	-webkit-transform: translateY( -1500px);
-	transform: translateY( -1500px );
-}
