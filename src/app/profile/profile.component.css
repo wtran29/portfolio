@@ -462,8 +462,8 @@ div.container #image-container{
 		padding-right: 5.5%;
 	}
 	.items img {
-		max-width: 22rem;
-		/*max-height: 177px;*/
+		max-width: 27rem;
+		
 	}
 	#left, #right {
 		width: 50%;
@@ -535,7 +535,7 @@ div.container #image-container{
 		padding-right: 70px;
 	}
 	.items img {
-		width: 639px;
+		width: 50rem;
 		
 	}
 	#left, #right {
