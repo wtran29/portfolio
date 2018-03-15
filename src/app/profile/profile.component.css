@@ -447,7 +447,64 @@ div.container #image-container{
 	}
 
 }
-@media only screen and (min-width: 360px) and (max-width: 500px) {
+@media only screen and (min-width: 375px) and (max-width: 419px) {
+	div.headline {
+		font-size: 85%;
+	}
+	img.me {
+		width: 95%;
+		margin-top: 25px;
+
+	}
+	.padding {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.items{
+		padding-left: 5.5%;
+		padding-right: 5.5%;
+	}
+	.items img {
+		max-width: 24rem;
+		
+	}
+	#left, #right {
+		width: 50%;
+	}
+	.collapsible-header h4{
+		font-size: 160%;
+	}
+	#about, #projects, #tech, #contact, footer .container {
+		text-align: center;
+	}
+	iframe {
+		width: 90%;
+	}
+
+	.box-two p {
+		font-size: 80%;
+
+	}
+
+	.box-two i{
+		display: none;
+	}
+
+	.tech-box {
+		width: 80%;
+		min-height: 80%;
+	}
+
+	#tech h5, #projects h5 {
+		font-size: 18px;
+
+	}
+
+	#contact p {
+		display: inline;
+	}
+}
+@media only screen and (min-width: 420px) and (max-width: 500px) {
 	img.me {
 		width: 95%;
 		margin-top: 25px;
