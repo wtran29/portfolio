@@ -115,10 +115,22 @@ div.tech-box ul li div {
 }
 
 div.tech-container {
-	background-color: #393939;
+	/*background-color: #393939;*/
 	padding: 0;
 	text-align: center;
 
+}
+
+#tech {
+	background: black;
+	width: 100%;
+	padding-bottom: 20px;
+
+}
+
+.padding {
+	padding-left: 70px;
+	padding-right: 70px;
 }
 
 div.tech-box p{
@@ -202,22 +214,21 @@ ul.bullets p {
 	/*margin: 5em auto;*/
 	margin-top: 5em;
 	padding: 0;
-	/*background: black;*/
+	background: black;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-#image-container h5{
-	color: white;
-	text-align: center;
-}
 .items {
-	max-width: 696px;
-	height: 388px;
+	max-width: 700px;
+	
 }
 
 .items img{
-	width: 696px;
+	width: 700px;
 	border: 10px solid white;
-	max-height: 388px;
+	
 }
 
 div.box-one {
@@ -230,6 +241,7 @@ div.box-two {
 	border-radius: 5px;
 	/*background: black;*/
 }
+
 
 div#contact p{
 	margin:0 auto;
@@ -295,12 +307,10 @@ div.container #image-container{
 		width: 95%;
 		margin-top: 25px;
 	}
-	.items {
-		height: 177px;
-	}
+	
 	.items img {
-		width: 308px;
-		max-height: 177px;
+		max-width: 22rem;
+		/*max-height: 177px;*/
 	}
 	#left, #right {
 		width: 50%;
@@ -311,12 +321,10 @@ div.container #image-container{
 
 }
 @media only screen and (min-width: 664px) and (max-width: 767px) {
-	.items {
-		height: 309px;
-	}
+	
 	.items img {
 		width: 549px;
-		max-height: 308px;
+		
 	}
 	#left, #right {
 		width: 50%;
@@ -338,12 +346,10 @@ div.container #image-container{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-	.items {
-		height: 358px;
-	}
+	
 	.items img {
 		width: 639px;
-		max-height: 358px;
+		
 	}
 	#left, #right {
 		width: 50%;
@@ -363,13 +369,9 @@ div.container #image-container{
 		margin-top:2%;
 	}
 
-	.items {
-		height: 381px;
-	}
-
 	.items img {
-		width: 696px;
-		max-height: 381px;
+		width: 700px;
+		
 	}
 
 	#left, #right {

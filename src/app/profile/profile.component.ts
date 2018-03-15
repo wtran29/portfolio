@@ -14,9 +14,9 @@ export class ProfileComponent implements OnInit {
     	{ title: "Positive Attitude" , name: '../assets/positive.jpg', label: "Always contributing to a positive environment and going the distance to get the job done." },
     	{ title: "Task Oriented", name: '../assets/task.jpg', label: "Strive to produce at a high level, backed with strong work ethic." },
     	{ title: "Self Motivated Learner", name: '../assets/motivated.jpeg', label: "Ability to pick up new technologies and apply them to development." },
-    	{ title: "Team player", name: '../assets/team.jpg', label: "Always to collaborate with others and learn from each other." },
+    	{ title: "Team player", name: '../assets/team.jpg', label: "Always open to collaborate with others and learn from each other." },
     	{ title: "Product Design", name: '../assets/design.jpg', label: "Keeping in mind how the design will represent the product." },
-    	{ title: "User Focused", name: '../assets/user.png', label: "Figuring out what features create value." },
+    	{ title: "User Focused", name: '../assets/user.jpg', label: "Figuring out what features create value." }
     	
     ];
   }

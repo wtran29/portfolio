@@ -63,133 +63,131 @@
 				<img src="../assets/freelancer.jpg" class="me">
 				<div class="about-me">
 					<h5>From Finance to Technology</h5>
-					<p>Transitioning from the world of financial statements to having the opportunity to implement technology and creating applications that influences lives. Having worked in different industries with a focus on Finance and Accounting for 10+ years, I realized how microprocessing and automation play a huge role in companies. These advancements in technology paved way to my curiosity as I set foot to being a software developer.</p> 
+					<p>Transitioning from the world of financial statements to having the opportunity to implement technology and creating applications that influences lives. Having worked in different industries with a focus on Finance and Accounting for 10+ years, I understood how microprocessing and automation play huge roles in companies. These advancements in technology paved way to my curiosity in software development.</p> 
 					<h5>Goals</h5>
-					<p>Upon finishing a rigorous 3 month training program and my continuous dedication to improve my craft, I have built a foundation for my humble beginnings as a software developer. My goal is to continue to build purposeful software programs that fit today's social media landscape.</p>
+					<p>Upon completing a rigorous 3 month training program and my continuous dedication to improving my craft, I have built a foundation for my humble beginnings as a software developer. My goal is to continue to build purposeful software programs that fit today's social media landscape.</p>
 				</div>
 				
 			</div>
 		</div>
-		<div id="image-container">
-			<h2>What I Offer and Value</h2>
-			<div ng2-carouselamos class="slides-wrapper"
-				[items]="items"
-				[width]="800"
-				[$prev]="prev"
-				[$next]="next"
-				[$item]="item">
-			</div>
+	</div>
+	<div id="image-container" class="container">
+		<h2>What I'm About</h2>
+		<div ng2-carouselamos class="slides-wrapper"
+			[items]="items"
+			[width]="700"
+			[$prev]="prev"
+			[$next]="next"
+			[$item]="item">
+		</div>
 
-			<ng-template #prev>
-				<img src="../assets/chevron-left.png" id="left">
-			</ng-template>
-				
-			<ng-template #next>
-				<img src="../assets/chevron-right.png" id="right">
-			</ng-template>
-
-			<ng-template #item let-item let-i="index">
-				<div class="items">
-					<h5>{{ item.title }}</h5>
-					<img src="{{ item.name }}">
-					<p>{{ item.label }}</p>
-				</div>
-			</ng-template>
+		<ng-template #prev>
+			<img src="../assets/chevron-left.png" id="left">
+		</ng-template>
 			
-		</div>
+		<ng-template #next>
+			<img src="../assets/chevron-right.png" id="right">
+		</ng-template>
+
+		<ng-template #item let-item let-i="index">
+			<div class="items">
+				<h5>{{ item.title }}</h5>
+				<img src="{{ item.name }}">
+				<p>{{ item.label }}</p>
+			</div>
+		</ng-template>
+		
+	</div>
+	<div class="container">	
 		<div id="projects">
 			<br>
 			<h2>Projects</h2>
 			<h5>Whether I am working on the front-end or back-end, I use methodology along with creativity and problem solving skills to build out purposeful applications.</h5>
 			<p>These are a couple of projects that I have worked on which help solidify my skills as a developer.</p>
 		</div>
-		<!-- <div class="scroll"> -->
-			<ul class="collapsible popout" data-collapsible="accordion">
-				<li>
-				<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>Club of Diamonds</h4></div>
-					<div class="collapsible-body">
-						<div class="box-one">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/1xWH7YfPYek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						</div>
-						<div class="box-two">
-							<h5>Description</h5>
-							<p>A social app geared towards young, affluent users to discover, showcase and 
-							list luxury items/services. Has login and registration, backend and frontend validations. Front page features a randomly generated item so it has some chance to gain exposure to other users.</p>
-							<h5>Responsibilities</h5>
-							<ul class="bullets">
-								<li><i class="tiny material-icons">send</i><p> Setting up the database, server, routing, models, controller, back-end and front-end design.</p></li>
-								<li><i class="tiny material-icons">send</i><p> Created and implemented Angular components, services, classes and routing.</p></li>
-								<li><i class="tiny material-icons">send</i><p> Implemented modal for registration, authentication, encryption, validations, sessions management, error handling.</p></li>
-								<li><i class="tiny material-icons">send</i><p> Implemented filter directive for search bar and equal validator directive for password confirmation.</p></li>
-								<li><i class="tiny material-icons">send</i><p> Deployed of project using AWS EC2.</p></li>
-							</ul>
-							<h5 class="built">This project was built with: </h5>
-							<p>JavaScript, Angular, Express.js, Node.js, MongoDB, HTML, CSS</p>
-							<h5 class="check">Check out the code <a href="http://github.com/wtran29/ClubOfDiamonds">here</a></h5>
-						</div>
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<li>
+			<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>Club of Diamonds</h4></div>
+				<div class="collapsible-body">
+					<div class="box-one">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/1xWH7YfPYek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
-				</li>
-				<li>
-					<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>DoggyCrate</h4></div>
-					<div class="collapsible-body">
-						<div class="box-one">	
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/VvktAVBA8x4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						</div>
-						<div class="box-two">
-							<h5>Description</h5>
-							<p>A monthly subscription platform for pet dogs. Has both admin and user role. Admin has control of subscription creation, availability, client data, and deleting. Users can subscribe and update prior to login and registration.</p>
-							<h5>Responsibilities</h5>
-							<ul class="bullets">
-								<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Created design of packages using Photoshop.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
-							</ul>
-							<h5 class="built">This project was built with: </h5>
-							<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL, Photoshop</p>
-							<h5 class="check">Check out the code <a href="http://github.com/wtran29/DoggyCrate">here</a></h5>
-						</div>
+					<div class="box-two">
+						<h5>Description</h5>
+						<p>A social app geared towards young, affluent users to discover, showcase and 
+						list luxury items/services. Has login and registration, backend and frontend validations. Front page features a randomly generated item so it has some chance to gain exposure to other users.</p>
+						<h5>Responsibilities</h5>
+						<ul class="bullets">
+							<li><i class="tiny material-icons">send</i><p> Setting up the database, server, routing, models, controller, back-end and front-end design.</p></li>
+							<li><i class="tiny material-icons">send</i><p> Created and implemented Angular components, services, classes and routing.</p></li>
+							<li><i class="tiny material-icons">send</i><p> Implemented modal for registration, authentication, encryption, validations, sessions management, error handling.</p></li>
+							<li><i class="tiny material-icons">send</i><p> Implemented filter directive for search bar and equal validator directive for password confirmation.</p></li>
+							<li><i class="tiny material-icons">send</i><p> Deployed of project using AWS EC2.</p></li>
+						</ul>
+						<h5 class="built">This project was built with: </h5>
+						<p>JavaScript, Angular, Express.js, Node.js, MongoDB, HTML, CSS</p>
+						<h5 class="check">Check out the code <a href="http://github.com/wtran29/ClubOfDiamonds">here</a></h5>
 					</div>
-				</li>
-				<li>
-					<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>Engage</h4></div>
-					<div class="collapsible-body">
-						<div class="box-one">
-							
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/KZLEh-QOYPQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						</div>
-						<div class="box-two">
-							<h5>Description</h5>
-							<p>A social app to promote users to create and engage in events with friends and family. Users have the ability to participate in a message board in ‘events’ page.</p>
-							<h5>Responsibilities</h5>
-							<ul class="bullets">
-								<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Administered version control using GitHub.</p></li>
-								<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
-							</ul>
-							<h5 class="built">This project was built with: </h5>
-							<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL</p>
-							<h5 class="check">Check out the code <a href="http://github.com/wtran29/EngageApp">here</a></h5>
-						</div>
+				</div>
+			</li>
+			<li>
+				<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>DoggyCrate</h4></div>
+				<div class="collapsible-body">
+					<div class="box-one">	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/VvktAVBA8x4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
-				</li>
-			</ul>
-		<!-- </div> -->
-
-
-		<div id="tech">
-			<br>
-			<h2>Technologies</h2>
-			<h5>I am capable of learning new technologies quickly and always look for the opportunity to expand my skills and grow as a developer.</h5>
-			<p>Here are the set of tools I have used below: </p>
-		</div>
+					<div class="box-two">
+						<h5>Description</h5>
+						<p>A monthly subscription platform for pet dogs. Has both admin and user role. Admin has control of subscription creation, availability, client data, and deleting. Users can subscribe and update prior to login and registration.</p>
+						<h5>Responsibilities</h5>
+						<ul class="bullets">
+							<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Created design of packages using Photoshop.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
+						</ul>
+						<h5 class="built">This project was built with: </h5>
+						<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL, Photoshop</p>
+						<h5 class="check">Check out the code <a href="http://github.com/wtran29/DoggyCrate">here</a></h5>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>Engage</h4></div>
+				<div class="collapsible-body">
+					<div class="box-one">
+						
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/KZLEh-QOYPQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="box-two">
+						<h5>Description</h5>
+						<p>A social app to promote users to create and engage in events with friends and family. Users have the ability to participate in a message board in ‘events’ page.</p>
+						<h5>Responsibilities</h5>
+						<ul class="bullets">
+							<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Administered version control using GitHub.</p></li>
+							<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
+						</ul>
+						<h5 class="built">This project was built with: </h5>
+						<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL</p>
+						<h5 class="check">Check out the code <a href="http://github.com/wtran29/EngageApp">here</a></h5>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="tech" class="container">
+		<br>
+		<h2 class="padding">Technologies</h2>
+		<h5 class="padding">I am capable of learning new technologies quickly and always look for the opportunity to expand my skills and grow as a developer.</h5>
+		<p class="padding">Here are the set of tools I have used below: </p>
 		<div class="tech-container">
 			<div class="tech-box">
 				<h4>LANGUAGES</h4>
@@ -231,12 +229,13 @@
 				</ul>
 			</div>
 		</div>
-		<div id="contact"><br><h2>Contact Me</h2>
+	</div>
+		<div id="contact" class="container"><br><h2>Contact Me</h2>
 			<p>I always value for the opportunity to grow and contribute to a positive environment.</p> 
 			<p>Let's work together and turn ideas into reality. </p>
 			<p>Feel free to contact me at <a href="mailto:wtran4hire@gmail.com">wtran4hire@gmail.com</a>.</p>
 		</div>
-	</div>
+	<!-- </div> -->
 	<footer class="page-footer">
           <div class="container">
             <div class="row">
