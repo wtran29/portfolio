@@ -257,6 +257,12 @@ div.container #image-container{
 	width: 100%;
 }
 
+.collapsible-header p {
+	padding-top: 12px;
+	padding-left: 12px; 
+	padding-right: 12px;
+}
+
 @media only screen and (min-width: 620px) and (max-width: 663px){
 	.items{
 		padding-left: 15%;
@@ -446,6 +452,10 @@ div.container #image-container{
 		text-align: center;
 	}
 
+	.collapsible-header h4{
+		font-size: 210%;
+	}
+
 }
 @media only screen and (min-width: 375px) and (max-width: 419px) {
 	div.headline {
@@ -473,6 +483,9 @@ div.container #image-container{
 	}
 	.collapsible-header h4{
 		font-size: 160%;
+	}
+	.collapsible-header p {
+		display: none;
 	}
 	#about, #projects, #tech, #contact, footer .container {
 		text-align: center;
@@ -527,6 +540,9 @@ div.container #image-container{
 	}
 	.collapsible-header h4{
 		font-size: 160%;
+	}
+	.collapsible-header p {
+		font-size: 85%;
 	}
 	#about, #projects, #tech, #contact, footer .container {
 		text-align: center;
