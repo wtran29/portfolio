@@ -20,10 +20,10 @@ div.me-section{
 	
 }
 div.about-me2 {
-	width: 390px;
 	display: inline-block;
-	text-align: left;
+	text-align: center;
 }
+
 div.about-me2 h5{
 	font-weight: bold;
 }
@@ -729,8 +729,12 @@ div.container #image-container{
 		max-width: 48%;
 		min-height: 250px;
 	}
+	
 }
 @media only screen and (min-width: 993px) {
+	.about-me2 {
+		width: 390px;
+	}
 	.padding {
 	padding-left: 70px;
 	padding-right: 70px;
