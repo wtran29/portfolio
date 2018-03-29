@@ -11,7 +11,7 @@
 	
 	
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<!-- <div class="navbar-fixed">
 		<nav data-activates="nav-mobile" class="button-collapse">
 			<div class="nav-wrapper">
@@ -60,12 +60,32 @@
 
 			<h2>About Me</h2>
 			<div class="me-section">
-				<img src="../assets/freelancer.jpg" class="me">
+				<div class="about-me2">
+					<img src="../assets/freelancer.jpg" class="me">
+					<h5 class="darkblue">Vision</h5>	
+					<p class="black-font">To bring value through functionality, innovation and design.</p>
+				</div>
 				<div class="about-me">
-					<h5>From Finance to Technology</h5>
-					<p>Transitioning from the world of financial statements to having the opportunity to implement technology and creating applications that influences lives. Having worked in different industries with a focus on Finance and Accounting for 10+ years, I understood how microprocessing and automation play huge roles in companies. These advancements in technology paved way to my curiosity in software development.</p> 
-					<h5>Goals</h5>
-					<p>Upon completing a rigorous 3 month training program and my continuous dedication to improving my craft, I have built a foundation for my humble beginnings as a software developer. My goal is to continue to build purposeful software programs that fit today's social media landscape.</p>
+					<h5 class="darkblue">Finance and Accounting</h5>
+					<ul>
+						<li><p class="black-font">10+ years of Finance and Accounting experience.</p></li>
+						<li><p class="black-font">Worked in various industries including Real Estate, Food and Beverage and Banking.</p></li>
+						<li><p class="black-font">Managing cash flows, financial reporting, variance analysis, process automation, financial analysis, reconciliation, capital distributions, profit distributions, and accruals.</p></li>
+					</ul>
+					<h5 class="darkblue">Software Development</h5>
+					<ul>
+						<li><p class="black-font">Proficient in Python, MEAN and Java full stack development.</p></li>
+						<li><p class="black-font">Perform SQL queries, CRUD operations, build out and deploy projects from client to server to database.</p></li>
+						
+					</ul>
+					<!-- <h5>From Finance to Technology</h5>
+					<p>Transitioning from the world of financial statements to having the opportunity to implement technology and creating applications that influences lives. Having worked in different industries with a focus on Finance and Accounting for 10+ years, I understood how microprocessing and automation play huge roles in companies. These advancements in technology paved way to my curiosity in software development.</p> --> 
+					<h5 class="darkblue">My Goals</h5>
+					<ul>
+						<li><p class="black-font">Continuous learning and dedication to improving my craft.</p></li>
+						<li><p class="black-font">Build purposeful software apps that influence lives.</p></li>
+						<li><p class="black-font">Incorporate my Finance/Accounting experience to create apps for data analytics and improve processes for various industries.</p></li>
+					</ul>
 				</div>
 				
 			</div>
@@ -93,7 +113,7 @@
 			<div class="items">
 				<h5>{{ item.title }}</h5>
 				<img src="{{ item.name }}">
-				<p>{{ item.label }}</p>
+				<p class="font-size">{{ item.label }}</p>
 			</div>
 		</ng-template>
 		
@@ -101,10 +121,10 @@
 	<div class="container">	
 		<div id="projects">
 			<br>
-			<h2>Projects</h2>
-			<h5>Whether I am working on the front-end or back-end, I use methodology along with creativity and problem solving skills to build out purposeful applications.</h5>
-			<p>These are a couple of projects that I have worked on which help solidify my skills as a developer.</p>
-		</div>
+			<h2 class="darkblue">Projects</h2>
+			<!-- <h5 class="darkblue">Whether I am working on the front-end or back-end, I use methodology along with creativity and problem solving skills to build out purposeful applications.</h5> -->
+			<h5 class="example">These are a couple of projects that I have worked on which help solidify my skills as a developer.</h5>
+		
 		<ul class="collapsible popout" data-collapsible="accordion">
 			<li>
 			<div class="collapsible-header"><h4><i class="large material-icons plus">add_circle</i>Club of Diamonds</h4><p>JavaScript</p></div>
@@ -114,19 +134,19 @@
 					</div>
 					<div class="box-two">
 						<h5>Description</h5>
-						<p>A social app geared towards young, affluent users to discover, showcase and 
+						<p class="body-padding">A social app geared towards young, affluent users to discover, showcase and 
 						list luxury items/services. Has login and registration, backend and frontend validations. Front page features a randomly generated item so it has some chance to gain exposure to other users.</p>
 						<h5>Responsibilities</h5>
 						<ul class="bullets">
-							<li><i class="tiny material-icons">send</i><p> Setting up the database, server, routing, models, controller, back-end and front-end design.</p></li>
-							<li><i class="tiny material-icons">send</i><p> Created and implemented Angular components, services, classes and routing.</p></li>
-							<li><i class="tiny material-icons">send</i><p> Implemented modal for registration, authentication, encryption, validations, sessions management, error handling.</p></li>
-							<li><i class="tiny material-icons">send</i><p> Implemented filter directive for search bar and equal validator directive for password confirmation.</p></li>
-							<li><i class="tiny material-icons">send</i><p> Deployed of project using AWS EC2.</p></li>
+							<li><p> Setting up the database, server, routing, models, controller, back-end and front-end design.</p></li>
+							<li><p> Created and implemented Angular components, services, classes and routing.</p></li>
+							<li><p> Implemented modal for registration, authentication, encryption, validations, sessions management, error handling.</p></li>
+							<li><p> Implemented filter directive for search bar and equal validator directive for password confirmation.</p></li>
+							<li><p> Deployed of project using AWS EC2.</p></li>
 						</ul>
 						<h5 class="built">This project was built with: </h5>
-						<p>JavaScript, Angular, Express.js, Node.js, MongoDB, HTML, CSS</p>
-						<h5 class="check">Check out the code <a href="http://github.com/wtran29/ClubOfDiamonds">here</a></h5>
+						<p class="body-padding">JavaScript, Angular, Express.js, Node.js, MongoDB, HTML, CSS</p>
+						<a href="http://github.com/wtran29/ClubOfDiamonds"><button class="git-button">Github</button></a>
 					</div>
 				</div>
 			</li>
@@ -138,20 +158,20 @@
 					</div>
 					<div class="box-two">
 						<h5>Description</h5>
-						<p>A monthly subscription platform for pet dogs. Has both admin and user role. Admin has control of subscription creation, availability, client data, and deleting. Users can subscribe and update prior to login and registration.</p>
+						<p class="body-padding">A monthly subscription platform for pet dogs. Has both admin and user role. Admin has control of subscription creation, availability, client data, and deleting. Users can subscribe and update prior to login and registration.</p>
 						<h5>Responsibilities</h5>
 						<ul class="bullets">
-							<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Created design of packages using Photoshop.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
+							<li><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
+							<li><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
+							<li><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
+							<li><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
+							<li><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
+							<li><p>Created design of packages using Photoshop.</p></li>
+							<li><p>Deployed project using AWS EC2.</p></li>
 						</ul>
 						<h5 class="built">This project was built with: </h5>
-						<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL, Photoshop</p>
-						<h5 class="check">Check out the code <a href="http://github.com/wtran29/DoggyCrate">here</a></h5>
+						<p class="body-padding">Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL, Photoshop</p>
+						<a href="http://github.com/wtran29/DoggyCrate"><button class="git-button">Github</button></a>
 					</div>
 				</div>
 			</li>
@@ -164,20 +184,20 @@
 					</div>
 					<div class="box-two">
 						<h5>Description</h5>
-						<p>A social app to promote users to create and engage in events with friends and family. Users have the ability to participate in a message board in ‘events’ page.</p>
+						<p class="body-padding">A social app to promote users to create and engage in events with friends and family. Users have the ability to participate in a message board in ‘events’ page.</p>
 						<h5>Responsibilities</h5>
 						<ul class="bullets">
-							<li><i class="tiny material-icons">send</i><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Administered version control using GitHub.</p></li>
-							<li><i class="tiny material-icons">send</i><p>Deployed project using AWS EC2.</p></li>
+							<li><p>Implemented dependencies in Spring Tool Suite IDE.</p></li>
+							<li><p>Set up config, controllers, models, repositories, services and validator packages.</p></li>
+							<li><p>Implemented custom logout handler, web security config and user details service for authentication.</p></li>
+							<li><p>Set up associations for one-to-many, many-to-many relationships in the models for MySQL.</p></li>
+							<li><p>Executed set up between MySQL database and STS to pass data and serve localhost.</p></li>
+							<li><p>Administered version control using GitHub.</p></li>
+							<li><p>Deployed project using AWS EC2.</p></li>
 						</ul>
 						<h5 class="built">This project was built with: </h5>
-						<p>Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL</p>
-						<h5 class="check">Check out the code <a href="http://github.com/wtran29/EngageApp">here</a></h5>
+						<p class="body-padding">Java, Spring Tools Suite, Spring Boot, MySQL, JSP, CSS, JSTL</p>
+						<a href="http://github.com/wtran29/EngageApp"><button class="git-button">Github</button></a>
 					</div>
 				</div>
 			</li>
@@ -189,26 +209,27 @@
 					</div>
 					<div class="box-two">
 						<h5>Description</h5>
-						<p>A simple weather forecast application. Users are able to see a 3 day forecast summary by searching the city.</p>
+						<p class="body-padding">A simple weather forecast application. Users are able to see a 3 day forecast summary by searching the city.</p>
 						<h5>Responsibilities</h5>
 						<ul class="bullets">
-							<li><i class="tiny material-icons">send</i><p> Set up validations and error handling.</p></li>
-							<li><i class="tiny material-icons">send</i><p> Implemented regex to match and scrap weather data.</p></li>
+							<li><p> Set up validations and error handling.</p></li>
+							<li><p> Implemented regex to match and scrap weather data.</p></li>
 							
 						</ul>
 						<h5 class="built">This project was built with: </h5>
-						<p>PHP, HTML, BootStrap, jQuery</p>
-						<h5 class="check">Check out the code <a href="http://github.com/wtran29/WeatherSpy">here</a></h5>
+						<p class="body-padding">PHP, HTML, BootStrap, jQuery</p>
+						<a href="http://github.com/wtran29/WeatherSpy"><button class="git-button">Github</button></a>
 					</div>
 				</div>
 			</li>
 		</ul>
 	</div>
+	</div>
 	<div id="tech" class="container">
 		<br>
 		<h2 class="padding">Technologies</h2>
 		<h5 class="padding">I am capable of learning new technologies quickly and always look for the opportunity to expand my skills and grow as a developer.</h5>
-		<p class="padding">Here are the set of tools I have used below: </p>
+		<p class="padding font-size">Here are the set of tools I have used below: </p>
 		<div class="tech-container">
 			<div class="tech-box">
 				<h4>LANGUAGES</h4>
@@ -226,8 +247,6 @@
 					<li><div><img src="../assets/nodejs.png" alt="node"><p>Node.js</p></div></li>
 					<li><div><img src="../assets/spring.png" alt="spring"><p>Spring Boot</p></div></li>
 					<li><div><img src="../assets/django.png" alt="django"><p>Django</p></div></li>
-					<li><div><img src="../assets/pandas.png" alt="pandas"><p>Pandas</p></div></li>
-					<!-- <li><div><img src="../assets/matplot.png" alt="matplot"><p>matplotlib</p></div></li> -->
 				</ul>
 			</div>
 			<div class="tech-box">
@@ -249,12 +268,23 @@
 					<li><div><img src="../assets/sqlite.png" alt="sqlite"><p>SQLite</p></div></li>
 				</ul>
 			</div>
+			<div class="tech-box">
+				<h4>ANALYTICS</h4>
+				<ul>
+					<li><div><img src="../assets/jupyter.png" alt="jupyter"><p>Jupyter</p></div></li>
+					<li><div><img src="../assets/pandas.png" alt="pandas"><p>Pandas</p></div></li>
+					<li><div><img src="../assets/matplot.png" alt="matplot"><p>matplotlib</p></div></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-		<div id="contact" class="container"><br><h2>Contact Me</h2>
-			<p>I always value for the opportunity to grow and contribute to a positive environment.</p> 
-			<p>Let's work together and turn ideas into reality. </p>
-			<p>Feel free to contact me at <a href="mailto:wtran4hire@gmail.com">wtran4hire@gmail.com</a>.</p>
+		<div id="contact" class="container"><br>
+			<h2 class="darkblue">Contact Me</h2>
+			<div class="body-padding">
+				<p class="black-font">I always value for the opportunity to grow and contribute to a positive environment.</p> 
+				<p class="black-font">Let's work together and turn ideas into reality. </p>
+				<p class="black-font">Feel free to contact me at <a href="mailto:wtran4hire@gmail.com">wtran4hire@gmail.com</a>.</p>
+			</div>
 		</div>
 	<!-- </div> -->
 	<footer class="page-footer">

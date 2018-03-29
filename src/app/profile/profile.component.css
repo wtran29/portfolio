@@ -3,7 +3,7 @@ html {
 	
 }
 body {
-	background-color: #393939;
+	background-color: white;
 }
 
 img.me {
@@ -13,21 +13,42 @@ img.me {
 }
 div.me-section{
 	text-align: center;
-	background: dimgrey;
+	background: gainsboro;
 	padding: 20px;
-	border-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+}
+div.about-me2 {
+	width: 390px;
+	display: inline-block;
+	text-align: left;
+}
+div.about-me2 h5{
+	font-weight: bold;
 }
 div.about-me{
 	display: inline-block;
 	vertical-align: top;
 	
 }
-div.about-me p, div.about-me h5{
-	/*display: inline;*/
-	
+div.about-me ul {
+	padding-left: 20px;
+}
+div.about-me h5{
 	margin: 20px;
 	text-align: left;
-	
+	font-weight: bold;
+}
+div.about-me p {
+	margin: 0 auto;
+}
+
+div.about-me li {
+	list-style-type: circle;
+	margin: 0 auto;
+	margin-left: 20px;
+	text-align: left;
 }
 
 div.tech-box img {
@@ -35,7 +56,9 @@ div.tech-box img {
 }
 
 h2 {
-	color: dodgerblue;
+	color: white;
+	letter-spacing: -1px;
+	padding-left: 15px;
 }
 
 h5 {
@@ -82,10 +105,10 @@ div.headline {
 }
 
 
-nav {
+/*nav {
 	background-color: steelblue;
 	
-}
+}*/
 
 div.tech-box {
 	display: inline-block;
@@ -128,7 +151,9 @@ div.tech-container {
 
 }
 
-
+.font-size {
+	font-size: 17px;
+}
 
 div.tech-box p{
 	margin: 0 auto;
@@ -140,7 +165,7 @@ div.tech-box h4{
 	margin-bottom: 15px;
 }
 .parallax-container {
-	height: 500px;
+	height: 800px;
 }
 .parallax {
 	background-image: url("../../assets/tokyo.jpg");
@@ -156,11 +181,58 @@ div.tech-box h4{
 }
 
 div.container #about, #projects, #tech, #contact {
-	padding-top: 35px;
+	margin-top: 35px;
 }
 
+#about {
+	border-radius: 5px;
+	background: darkblue;
+	box-shadow: 2px 2px 4px 0px grey;
+}
+#projects {
+	
+	border-radius: 5px;
+	background: gainsboro;
+	box-shadow: 2px 2px 4px 0px grey;
+	padding-bottom: 10px;
+}
+.black-font {
+	color: black;
+	
+}
+
+#projects h5{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.darkblue {
+	color: darkblue;
+}
+.example {
+	color: black;
+	font-size: 20px;
+	
+}
+#projects h5 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#contact {
+	background: white;
+	border-radius: 5px;
+	padding-bottom: 15px;
+	/*box-shadow: 2px 2px 4px 0px grey;*/
+	border: 2px dashed darkblue;
+}
+
+.body-padding {
+	padding-left: 30px;
+	padding-right: 30px;
+	
+}
 footer {
-	background-color: cornflowerblue;
+	background-color: slategray;
 	margin-top: 50px;
 }
 
@@ -195,21 +267,31 @@ h5.built{
 }
 ul.bullets {
 	color: deepskyblue;
-	/*padding-left: 2%;*/
+	padding-left: 45px;
 }
+ul.bullets li{
+	list-style-type: disc;
 
+}
 ul.bullets p {
-	display: inline-block;
+	/*display: inline-block;*/
 	/*vertical-align: super;*/
-	padding-left: 10px;
 	margin: 0 auto;
 
 }
 
+.git-button{
+	margin-left: 30px;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	background: navy;
+}
 #image-container{
+	
 	width: 100%;
 	/*margin: 5em auto;*/
-	margin-top: 5em;
+	margin-top: 35px;
 	padding: 0;
 	background: black;
 	text-align: center;
@@ -240,8 +322,10 @@ div.box-two {
 }
 
 
+
 div#contact p{
 	margin:0 auto;
+
 }
 
 img.great {
@@ -305,6 +389,9 @@ div.container #image-container{
 	#about, #projects, #tech, #contact, footer .container {
 		text-align: center;
 	}
+	.bullets {
+		text-align: left;
+	}
 }
 @media only screen and (min-width: 590px) and (max-width: 619px){
 	
@@ -352,6 +439,9 @@ div.container #image-container{
 	}
 	#about, #projects, #tech, #contact, footer .container {
 		text-align: center;
+	}
+	.bullets {
+		text-align: left;
 	}
 
 }
@@ -402,6 +492,9 @@ div.container #image-container{
 	#about, #projects, #tech, #contact, footer .container {
 		text-align: center;
 	}
+	.bullets {
+		text-align: left;
+	}
 
 }
 @media only screen and (min-width: 501px) and (max-width: 549px){
@@ -451,6 +544,9 @@ div.container #image-container{
 	#about, #projects, #tech, #contact, footer .container {
 		text-align: center;
 	}
+	.bullets {
+		text-align: left;
+	}
 
 	.collapsible-header h4{
 		font-size: 210%;
@@ -490,6 +586,11 @@ div.container #image-container{
 	#about, #projects, #tech, #contact, footer .container {
 		text-align: center;
 	}
+
+	.bullets {
+		text-align: left;
+	}
+
 	iframe {
 		width: 90%;
 	}
@@ -547,6 +648,11 @@ div.container #image-container{
 	#about, #projects, #tech, #contact, footer .container {
 		text-align: center;
 	}
+
+	.bullets {
+		text-align: left;
+	}
+
 	iframe {
 		width: 90%;
 	}
@@ -599,6 +705,10 @@ div.container #image-container{
 	}
 	footer .container {
 		text-align: center;
+	}
+	.padding {
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 }
 
@@ -665,7 +775,7 @@ div.container #image-container{
 }
 
 .collapsible-header {
-	background-color: cornflowerblue;
+	background-color: darkblue;
 	padding: 0;
 	padding-left: 1rem;
 }

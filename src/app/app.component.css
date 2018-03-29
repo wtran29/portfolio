@@ -44,14 +44,23 @@ div.headline p {
 }
 a.brand-logo{
 	z-index: 100;
+
 }
+a.brand-logo p {
+	color: white;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 auto;
+}
+
 img.logo {
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 64px;
+	height: 64px;
 	padding: 10px;
 	position: relative;
 	z-index: 100;
+	display: inline-block;
 }
 
 div.nav-wrapper {
@@ -65,7 +74,17 @@ div.headline {
 
 
 nav {
-	background-color: cornflowerblue;
-	
+	background-color: darkblue;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+	a.brand-logo p {
+		display: none;
+	}
+	img.logo {
+		width: 100px;
+		height: 100px;
+	}
+}
