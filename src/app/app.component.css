@@ -55,8 +55,8 @@ a.brand-logo p {
 
 img.logo {
 	border-radius: 50%;
-	width: 64px;
-	height: 64px;
+	width: 100px;
+	height: 100px;
 	padding: 10px;
 	position: relative;
 	z-index: 100;
@@ -83,8 +83,5 @@ nav {
 	a.brand-logo p {
 		display: none;
 	}
-	img.logo {
-		width: 100px;
-		height: 100px;
-	}
+	
 }
