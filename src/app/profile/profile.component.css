@@ -287,6 +287,14 @@ ul.bullets p {
 	font-weight: bold;
 	background: navy;
 }
+
+.live-button{
+	margin-left: 30px;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	background: orangered;
+}
 #image-container{
 	
 	width: 100%;
